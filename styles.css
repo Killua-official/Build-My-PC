@@ -537,6 +537,20 @@ h4 {
     padding-bottom: 20px;
 }
 
+.sound-section {
+    margin-top: 20px; /* Adjust the margin based on your design */
+}
+
+.music {
+    text-align: center;
+    color: #26476c;
+}
+
+#playPauseButton {
+    padding: 10px 30px 10px 30px;
+    margin-left: 60px;
+}
+
 #scrollToTopBtn {
     font-family: Bahnschrift, Arial, sans-serif;
     position: fixed;

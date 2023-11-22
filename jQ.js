@@ -1,5 +1,5 @@
 //Function to align all cards to the same size
-(document).ready(function () {
+$(document).ready(function () {
     var maxHeight = 0;
     $(".card").each(function () {
         const height = $(this).height();
