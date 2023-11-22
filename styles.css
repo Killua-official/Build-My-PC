@@ -1,0 +1,585 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Bahnschrift, Arial, sans-serif;
+    border: none;
+}
+
+h2 {
+    font-size: 45px;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    color: #000;
+}
+
+span {
+    color: royalblue;
+}
+
+
+.bg-primary {
+    background-color: #23282B !important;
+}
+
+img {
+    object-fit: cover;
+}
+
+.btn {
+    background-color: royalblue;
+    border: none;
+    padding: 13px 20px 13px 20px;
+    border-radius: 30px;
+}
+
+.btn:hover{
+    background-color: chocolate;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+.carousel-item {
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat scroll center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.carousel-item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #000;
+    opacity: 0.7;
+}
+
+.carousel-caption {
+    bottom: 25%;
+}
+
+.carousel-caption h5 {
+    font-size: 100px;
+    font-weight: 700;
+}
+
+.carousel-caption p {
+    font-size: 18px;
+    top: 2rem;
+}
+
+.slider-btn {
+    margin-top: 30px;
+}
+
+.slider-btn .btn {
+    background-color: royalblue;
+    border: none;
+    padding: 20px 35px 20px 35px;
+    border-radius: 30px;
+    color: white;
+    font-size: 1rem;
+    margin: 4px;
+}
+
+.slider-btn .btn:hover {
+    background-color: chocolate;
+}
+
+.slider-btn .btn-2 {
+    color: #111010;
+    background-color: white;
+    margin: 8px;
+}
+
+.bg-primary h3 {
+    margin-right: 20px;
+}
+
+@media (max-width: 576px) {
+    .carousel-caption h5 {
+        font-size: 2em;
+    }
+
+    .carousel-caption p {
+        font-size: 0.8em;
+    }
+
+    .slider-btn .btn {
+        padding: 0.8rem 1.2rem;
+    }
+
+    .slider-btn .btn-2 {
+        margin: 2px !important;
+    }
+
+    /*   when phone small  */
+    .carousel-caption {
+        bottom: 35% !important;
+    }
+}
+
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.card-body {
+    flex-grow: 1;
+}
+
+.card-body img {
+    transition: transform 0.2s ease-in-out;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.card-body img:hover {
+    transform: scale(1.1);
+}
+
+.card-body .btn-primary{
+    padding: 13px 20px 13px 20px;
+    border-radius: 30px;
+}
+
+#scrollToTopBtn {
+    font-family: Bahnschrift, Arial, sans-serif;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+
+}
+
+.container .navbar-brand {
+    color: #6E96E2;
+}
+
+.container .navbar-brand span{
+    color: #E5AB2A;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#questions {
+    background-color: #f8f9fa;
+}
+
+.accordion-header button {
+    background-color: #ffffff;
+    color: #000;
+}
+
+.accordion-body {
+    background-color: #6E96E2;
+    color: #ffffff;
+}
+
+#learn .read-more-link, .read-more-link {
+    background-color: royalblue;
+    color: white;
+    border: none;
+    margin-top: 30px;
+    padding: 15px 20px 15px 20px;
+    border-radius: 30px;
+}
+
+#learn .read-more-link:hover, .read-more-link:hover {
+    background-color:chocolate;
+    color: white;
+}
+
+.page-heading {
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+
+.sub-title, .sub-title a {
+    text-align: center;
+    font-family: roboto slab,serif;
+    font-size: 14px;
+    color: #fff;
+}
+
+.page-bg {
+    background-color: #202020;
+    background-image: url(https://buildmypc.net/assets/images/bg/abt-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    color: #fff;
+    position: relative;
+    z-index: 0;
+}
+
+.page-bg:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: rgba(32,32,32,.85);
+}
+
+.page-head {
+    background-image: url('https://buildmypc.net/assets/images/bg/components.jpg');
+    padding-top: 150px;
+    padding-bottom: 90px;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.head {
+    color: #ffffff;
+}
+
+.row-flex {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-size: 1.6em;
+    font-weight: 300;
+    letter-spacing: .01em;
+    line-height: 1.6;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+@media (min-width: 992px)
+.col-md-4 {
+    width: 33.33333333%;
+}
+
+.content-gap {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 0px;
+    margin-bottom: 50px;
+}
+
+.box {
+    position: relative;
+}
+
+
+.content {
+    height: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.30);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    background: #23282B !important;;
+}
+
+.product-image {
+    position: relative;
+    transition: all .3s ease 0s;
+    overflow: hidden;
+}
+
+.content .product-image {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.product-image img {
+    height: 150px;
+    overflow: hidden;
+}
+
+.content .pic-2 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+
+h4 {
+    font-size: 18px;
+    color: #f8f9fa;
+    font-weight: 700;
+    margin: 20px;
+}
+
+.content-information {
+    height: auto;
+    font-size: 13px;
+    color: #2a2a2a;
+    border-top: 1px dotted #525252;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    flex-wrap: wrap;
+}
+
+.content-information div:nth-child(odd) {
+    border-right: 1px dotted #525252;
+    padding-right: 1rem;
+}
+
+
+.content-information div:nth-child(odd) {
+    border-right: 1px dotted #525252;
+    padding-right: 1rem;
+}
+
+.content-information .content-detail {
+    padding: 5px 0;
+    -ms-flex-align: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 75px;
+    border-bottom: 1px dotted #525252;
+    flex: 0 50%;
+    font-weight: 700;
+    color: #f8f9fa;
+}
+
+.d-flex {
+    display: -ms-flexbox !important;
+    display: flex !important;
+}
+
+.price {
+    margin-top: 15px;
+    color: #f8f9fa;
+}
+
+.pic-1 {
+    margin-left: 35px;
+}
+
+.product-image img:hover {
+    transform: scale(1.1);
+}
+
+@media (min-width: 768px)
+.col-sm-offset-2 {
+    margin-left: 16.66666667%;
+}
+
+@media (min-width: 768px)
+.col-sm-8 {
+    width: 66.66666667%;
+}
+
+.section {
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+
+@media (min-width: 1200px)
+.container {
+    width: 1170px;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.section-heading {
+    padding-bottom: 20px!important;
+    margin-top: -60px!important;
+}
+
+.section-heading {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.section-heading .title, .section-heading .title h2 {
+    font-size: 36px;
+    text-transform: capitalize;
+    color: #26476c;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem 1rem;
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.tab button:hover {
+    color: #f8f9fa;
+    background-color: royalblue;
+}
+
+.tab button.active {
+    color: #f8f9fa;
+    background-color: royalblue;
+}
+
+.tabcontent {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-top: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem 1rem;
+}
+
+
+.article {
+    margin-bottom: 20px;
+}
+
+.article h2 {
+    color: #26476c;
+}
+
+.read-more {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+.search-bar {
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    width: 70%;
+    padding: 8px;
+    margin-right: 10px;
+}
+
+.search-bar button {
+    padding: 8px 15px;
+}
+
+.article-names {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.article-names h4 {
+    color: #333;
+    margin-left: 0;
+}
+
+.article-names ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.article-names li {
+    margin-bottom: 5px;
+}
+
+.article-names a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.article-names a:hover {
+    color: chocolate;
+}
+
+.col-lg-4, .col-lg-8 {
+    margin-top: 100px;
+}
+
+.search-bar .btn-primary {
+    margin-left: 28px;
+}
+
+
+.col-lg-8 {
+    background-color: #f8f9fa;
+    padding: 30px;
+}
+
+
+.type {
+    width: 100%;
+}
+
+.info {
+    padding-bottom: 15px;
+    color: #525252;
+}
+
+.name {
+    color: #26476c;
+}
+
+
+.info1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
